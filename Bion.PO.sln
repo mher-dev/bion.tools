@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bion.Core", "Bion.Core\Bion.Core.csproj", "{39A57EF2-A7E4-4D8A-82C7-5013BD6AF048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bion.PO", "Bion.PO\Bion.PO.csproj", "{98B20943-D36A-437E-92FA-72EC82C4D615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bion.PO.Test", "Bion.PO.Test\Bion.PO.Test.csproj", "{E3D0ACEA-89E3-49D1-8529-058B8E4B7BD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39A57EF2-A7E4-4D8A-82C7-5013BD6AF048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A57EF2-A7E4-4D8A-82C7-5013BD6AF048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A57EF2-A7E4-4D8A-82C7-5013BD6AF048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A57EF2-A7E4-4D8A-82C7-5013BD6AF048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98B20943-D36A-437E-92FA-72EC82C4D615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B20943-D36A-437E-92FA-72EC82C4D615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B20943-D36A-437E-92FA-72EC82C4D615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B20943-D36A-437E-92FA-72EC82C4D615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3D0ACEA-89E3-49D1-8529-058B8E4B7BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D0ACEA-89E3-49D1-8529-058B8E4B7BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D0ACEA-89E3-49D1-8529-058B8E4B7BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D0ACEA-89E3-49D1-8529-058B8E4B7BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
