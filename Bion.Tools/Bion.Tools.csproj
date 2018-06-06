@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CC5E112-0144-4292-99E1-368A0EFB3EE7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bion.Tools</RootNamespace>
+    <AssemblyName>Bion.Tools</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Bion.Tools.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compression\BCompresor.cs" />
+    <Compile Include="Console\BCColorAmbit.cs" />
+    <Compile Include="Console\BCColorExtended.cs" />
+    <Compile Include="Console\BCOutputStalkerManager.cs" />
+    <Compile Include="Console\BCOutputWrapper.cs" />
+    <Compile Include="Console\BCText.cs" />
+    <Compile Include="Console\BCBackgroundColorAmbit.cs" />
+    <Compile Include="Console\BCTextColorAmbit.cs" />
+    <Compile Include="Console\Enums\BCTextFormats.cs" />
+    <Compile Include="Console\Exceptions\BCException.cs" />
+    <Compile Include="Console\Interface\IBCColorAmbit.cs" />
+    <Compile Include="Console\Interface\IBCExtendedColor.cs" />
+    <Compile Include="Console\Interface\IBCText.cs" />
+    <Compile Include="Console\Interface\IBCOutputExtended.cs" />
+    <Compile Include="Console\Interface\IBCOutputStalkerManager.cs" />
+    <Compile Include="Console\Interface\ITextWriter.cs" />
+    <Compile Include="Exceptions\BNotImplementedException.cs" />
+    <Compile Include="Extensions\ExtensionsSystem.cs" />
+    <Compile Include="Extensions\InternalExtensions.cs" />
+    <Compile Include="Generic\Classes\Generic\BDefaultObjectCaster.cs" />
+    <Compile Include="Generic\Classes\IDictionary\BCreativeDictionary.cs" />
+    <Compile Include="Generic\Classes\IDictionary\BDictionaryBase.cs" />
+    <Compile Include="Generic\Classes\IDictionary\BDictionaryDebuggerView.cs" />
+    <Compile Include="Generic\Classes\IDictionary\BFriendlyDictionary.cs" />
+    <Compile Include="Generic\Classes\IDictionary\BDictionary.cs" />
+    <Compile Include="Generic\Classes\IDictionary\BLazyDictionary.cs" />
+    <Compile Include="Generic\Classes\IDictionary\IBDictionary.cs" />
+    <Compile Include="Generic\Classes\IList\ListExtended.cs" />
+    <Compile Include="Generic\Classes\IList\BPList.cs" />
+    <Compile Include="Generic\Classes\IList\IBPList.cs" />
+    <Compile Include="Generic\Interfaces\IBColor.cs" />
+    <Compile Include="Generic\Interfaces\IBDisposable.cs" />
+    <Compile Include="Generic\Interfaces\IBException.cs" />
+    <Compile Include="Generic\Interfaces\IBObjectCaster.cs" />
+    <Compile Include="Generic\Interfaces\IBUID.cs" />
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="Extensions\ExtensionsLinq.cs" />
+    <Compile Include="Exceptions\BException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticTools\BConsole.cs" />
+    <Compile Include="StaticTools\BionTools.cs" />
+    <Compile Include="StaticTools\TypeSwitch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bion.Core\Bion.Core.csproj">
+      <Project>{39a57ef2-a7e4-4d8a-82c7-5013bd6af048}</Project>
+      <Name>Bion.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
